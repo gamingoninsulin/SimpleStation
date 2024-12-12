@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Radio Station Website</title>
+<link rel="stylesheet" type="text/css" href="./data/css/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <ul>
+        <li><a href="#">Q-music</a></li>
+        <li><a href="#">Radio 538</a></li>
+        <li><a href="#">Slam FM</a></li>
+        <li><a href="#">Sky Radio</a></li>
+        <li><a href="#">100% NL</a></li>
+        <li><a href="#">Radio NL</a></li>
+        <li><a href="#">Radio 10</a></li>
+      </ul>
+    </div>
+    <div class="main-content">
+      <h1>Welcome to Simple Station!</h1>
+    </div>
+    <div class="music-player-section">
+      <div class="now-playing">
+        <img src="./data/stations/placeholder-album-art.png" alt="Now Playing" id="albumArt">
+      </div>
+      <div class="music-player">
+        <button id="playPauseButton">Play</button>
+        <input type="range" id="volumeControl" min="0" max="1" step="0.01" value=".5">
+        <audio id="audioPlayer"></audio>
+      </div>
+    </div>
+    <div class="footer">
+      <p>&copy; 2024 <a href="#">Simple Station</a>. License <a href="./LICENSE.md" target="_blank">MIT</a>.</p>
+    </div>
+  </div>
+  <script type="module" src="./data/js/script.js"></script> </body>
+</html>
